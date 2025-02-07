@@ -1,0 +1,17 @@
+{
+  "name": "ChatGPT Collapser",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "ChatGPT-Collapser",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ]
+}
+
