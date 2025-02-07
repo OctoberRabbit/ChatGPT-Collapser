@@ -15,7 +15,7 @@ style.textContent = `
 document.head.appendChild(style);
 
 // ===================
-// 2. 折りたたみ関数
+// 折りたたみ関数
 // ===================
 function toggleCollapse(answerContent) {
   answerContent.classList.toggle('collapsed-gpt-answer');
@@ -26,7 +26,7 @@ function addCollapseFeature(answerElem) {
   if (answerElem.querySelector('.collapse-btn')) return;
 
   const collapseBtn = document.createElement('div');
-  collapseBtn.innerText = '▼ 折りたたむ';
+  collapseBtn.innerText = '▲ Collapse';
   collapseBtn.className = 'collapse-btn';
 
   // 回答本文を探す（セレクタは適宜調整）
@@ -45,7 +45,7 @@ function addCollapseFeature(answerElem) {
 }
 
 // ===================
-// 3. MutationObserverで新回答を監視
+// MutationObserverで新回答を監視
 // ===================
 
 // ChatGPTの会話を包むコンテナを探す。適宜セレクタを変更。
